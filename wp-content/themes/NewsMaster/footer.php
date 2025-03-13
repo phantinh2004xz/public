@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-<footer>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; <?php echo date('Y'); ?> Theme NewsMaster. All rights reserved.</p>
+    </div>
 </footer>
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> <!-- Bắt buộc để WordPress hoạt động đúng -->
 </body>
 </html>
-=======
-<footer>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
-</footer>
-
-<?php wp_footer(); ?>
-</body>
-</html>
->>>>>>> 18cdc07 (update)

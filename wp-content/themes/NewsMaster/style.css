@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 /*
-Theme Name: NewsMaster123123
+Theme Name: NewsMaster
 Theme URI: https://NewsMaster.com
 Author: Nhóm 8
 Description: Một theme đơn giản được tạo ra để demo
@@ -8,10 +7,11 @@ Version: 1.0
 Text Domain: newsmaster
 */
 /* Đặt font chữ và màu sắc chung */
+/* Body - Cải thiện bố cục */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #eef1f5; /* Nền xám nhẹ thay vì trắng tinh */
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -19,155 +19,144 @@ body {
 
 /* Header */
 header {
-  background: #2c3e50;
+  background: linear-gradient(135deg, #243b55, #141e30);
   color: white;
-  padding: 20px;
+  padding: 15px 0; /* Giảm padding trên/dưới để header nhỏ lại */
   text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Menu */
-nav {
-  background: #34495e;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Main content */
-main {
-  width: 70%;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-/* Sidebar */
-aside {
-  width: 25%;
-  float: right;
-  background: #ecf0f1;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-/* Định dạng bài viết */
-article {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-}
-
-article h2 {
-  color: #2c3e50;
-}
-=======
-/*
-Theme Name: NewsMaster123123
-Theme URI: https://NewsMaster.com
-Author: Nhóm 8
-Description: Một theme đơn giản được tạo ra để demo
-Version: 1.0
-Text Domain: newsmaster
-*/
-/* Đặt font chữ và màu sắc chung */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f4f4f4;
-  line-height: 1.6;
+header h1 {
+  font-size: 2.2rem; /* Giảm kích thước chữ */
   margin: 0;
-  padding: 0;
-}
-
-/* Header */
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 20px;
-  text-align: center;
 }
 
 /* Menu */
 nav {
-  background: #34495e;
+  background: #2c3e50;
   padding: 10px;
-  text-align: center;
+  border-radius: 8px;
 }
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  background: #ff5722;
 }
 
-/* Main content */
-main {
-  width: 70%;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
+/* Bài viết */
+article h2,
+.fw-bold {
+  color: #243b55;
+  font-size: 1.8rem;
+  text-decoration: none; /* Bỏ gạch chân */
+}
+article h2 a,
+.fw-bold a {
+  text-decoration: none; /* Bỏ gạch chân tiêu đề bài viết */
+  color: #243b55;
+}
+article h2 a:hover,
+.fw-bold a:hover {
+  color: #ff5722;
+}
+
+/* Ảnh bài viết */
+.img-fluid.rounded {
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.img-fluid.rounded:hover {
+  transform: scale(1.05);
+}
+/* Căn chỉnh bố cục bài viết */
+/* Căn chỉnh bố cục bài viết */
+.article-item {
+  display: flex;
+  align-items: center; /* Căn giữa ảnh và chữ theo chiều dọc */
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  gap: 20px; /* Tạo khoảng cách giữa ảnh và nội dung */
+}
+
+.article-image {
+  flex: 0 0 15%; /* Ảnh chiếm 30% */
+}
+
+.article-image img {
+  width: 100%; /* Chiếm toàn bộ khung ảnh */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-right: 20px; /* Khoảng cách với nội dung */
+}
+
+.article-content {
+  flex: 0 0 40%; /* Nội dung chiếm 70% */
+}
+.site-footer {
+  background-color: #1a1a1a; /* Màu nền tối */
+  color: #ffffff; /* Màu chữ trắng */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.site-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Hiển thị menu theo hàng ngang */
+  justify-content: center; /* Căn giữa menu */
+}
+
+.main-navigation ul li {
+  margin: 0 15px;
+}
+
+.main-navigation ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s ease-in-out;
+}
+
+.main-navigation ul li a:hover {
+  background-color: #333;
   border-radius: 5px;
 }
-
-/* Sidebar */
-aside {
-  width: 25%;
-  float: right;
-  background: #ecf0f1;
-  padding: 15px;
-  margin-top: 20px;
+header h1 a {
+  text-decoration: none;
+  color: white; /* Màu chữ */
 }
 
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+header h1 a:hover {
+  color: #0073aa; /* Màu khi hover */
 }
 
-/* Định dạng bài viết */
-article {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+/* Hiển thị thanh quản trị admin */
+#wpadminbar {
+  display: block !important;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
-article h2 {
-  color: #2c3e50;
+/* Điều chỉnh khoảng cách nếu admin bar bị che mất nội dung */
+body.admin-bar {
+  margin-top: 32px;
 }
->>>>>>> 18cdc07 (update)

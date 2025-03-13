@@ -1,0 +1,113 @@
+/*
+Theme Name: Newspaperly Child
+Theme URI: https://newspaperly-child
+Description: Child theme của Newspaperly
+Author: Nhóm 8
+Template: newspaperly
+Version: 1.0
+Text Domain: newspaperly-child
+*/
+
+@import url("../newspaperly/style.css");
+/* Đổi font chữ sang Google Font */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Menu điều hướng */
+.navbar {
+  background-color: #333 !important;
+  border-radius: 5px;
+}
+
+.navbar a {
+  color: #fff !important;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #ff6600;
+  border-radius: 5px;
+}
+
+/* Tiêu đề bài viết */
+.entry-title a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.entry-title a:hover {
+  color: #ff6600 !important;
+}
+
+/* Bố cục bài viết */
+.post-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.post-thumbnail img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.post-thumbnail img:hover {
+  transform: scale(1.05);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-item:hover {
+  transform: scale(1.03);
+}
+
+.post-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Làm nổi bật các liên kết khi di chuột */
+a:hover {
+  color: #ff0000 !important;
+}

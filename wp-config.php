@@ -91,11 +91,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define( 'WP_DEBUG', false );
 }
 
-<<<<<<< HEAD
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
-=======
-define( 'WP_ENVIRONMENT_TYPE', 'local' );
->>>>>>> 18cdc07 (update)
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
